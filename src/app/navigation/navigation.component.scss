@@ -1,0 +1,56 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo .mat-toolbar{
+  color: black;
+  background-color: white;
+}
+
+.spacer {
+  flex: 1; /* Flex grow to take up remaining space */
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add light shadow */
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Adjust margin for spacing */
+}
+
+.user-info {
+  margin-left: 8px; /* Adjust margin for spacing */
+}
+
+.user-name {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #666;
+}
+
+.mat-nav-list .mat-list-item .mat-list-item-content .sub-link {
+  font-size: 8px;
+}

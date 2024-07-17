@@ -1,0 +1,214 @@
+*{
+  background-color: white;
+  color: black;
+}
+body{
+  background-color: white;
+  color: black;
+}
+
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.dashboard-card div{
+  right: 0;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.dropdown {
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+}
+
+input {
+  width: 140px;
+  height: 24px;
+  margin: 20px;
+}
+
+.submit{
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: rgb(0,122,147);
+}
+
+.custom-input::placeholder {
+  padding-left: 10px; 
+  color: #999; 
+}
+
+.filter-section {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.more-icon {
+  vertical-align: top; 
+  margin-top: 3px;
+  margin-right: 40px;
+}
+
+.dashboard-card .mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-card .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-card .header-right div {
+  margin-left: 700px;
+}
+
+.dashboard-card .header-right select {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.dashboard-card .header-right select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.text-between-cards {
+  margin-top: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.card-table th, .card-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.card-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.dashboard-card .mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-card .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-card .header-right div {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.dashboard-card .header-right select {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+.dashboard-card .header-right select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.text-between-cards {
+  margin: 0;
+  padding: 16px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+// .card-table {
+//   width: 50%;
+//   border-collapse: collapse;
+//   margin: 16px 0;
+// }
+
+// .card-table th, .card-table td {
+//   border: 1px solid #ddd;
+//   padding: 8px;
+//   text-align: left;
+// }
+
+// .card-table th {
+//   background-color: #f2f2f2;
+//   font-weight: bold;
+// }
+
+// .card-table tbody tr:nth-child(even) {
+//   background-color: #f9f9f9;
+// }
+
+table {
+  width: calc(50% - 20px);
+  border-collapse: collapse;
+  
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+   
+}
+
+.head{
+  font-weight: lighter;
+  color: white;
+  background-color: rgb(65, 215, 245);
+}
+
+.thead{
+  font-weight: lighter;
+}

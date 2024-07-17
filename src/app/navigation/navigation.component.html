@@ -1,0 +1,44 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <div class="logo">
+      <mat-toolbar>DAIMLAR TRUCK</mat-toolbar>
+    </div>
+
+    <mat-nav-list>
+      <ng-container *ngFor="let link of mainLinks">
+        <mat-list-item (click)="selectMainLink(link.title)">
+          {{ link.title }}
+        </mat-list-item>
+        <mat-list *ngIf="selectedItem === link.title">
+          <mat-list-item *ngFor="let sublink of link.subLinks">
+            <a mat-list-item href="#" class="sub-link">{{ sublink }}</a>
+          </mat-list-item>
+        </mat-list>
+      </ng-container>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span *ngIf="isHandset$ | async" class="spacer"></span>
+      <button mat-icon-button *ngIf="isHandset$ | async" aria-label="Toggle sidenav" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <div class="user-profile">
+        <button mat-icon-button aria-label="Notifications">
+          <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Account">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <div class="user-info">
+          <div class="user-name">Thenmozhi</div>
+          <div class="user-role">Admin</div>
+        </div>
+      </div>
+    </mat-toolbar>
+    <app-dashboard></app-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>

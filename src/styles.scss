@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Example styles.scss
+
+// Import other stylesheets or libraries if needed
+// @import 'path/to/your/variables.scss';
+// @import 'path/to/your/mixins.scss';
+
+// Global styles
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.container {
+  margin: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.overall-trend {
+  margin-bottom: 20px;
+}
+
+.sections {
+  display: flex;
+  gap: 20px;
+}
+
+.section {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
